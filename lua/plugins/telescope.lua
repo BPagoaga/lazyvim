@@ -20,5 +20,12 @@ return {
         { "<leader>fp", "<Cmd>Telescope projects<CR>", desc = "Projects" },
       },
     },
+    -- telescope-file-browser
+    {
+      "nvim-telescope/telescope-file-browser.nvim",
+      config = function()
+        require("telescope").load_extension("file_browser")
+      end,
+    },
   },
 }
