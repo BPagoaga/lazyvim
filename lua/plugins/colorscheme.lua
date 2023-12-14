@@ -17,7 +17,11 @@ return {
   priority = 1000,
   opts = function()
     return {
-      transparent = true,
+      transparent = true, -- Change the "hint" color to the "orange" color, and make the "error" color bright red
+      on_colors = function(colors)
+        colors.hint = colors.orange
+        colors.error = "#ff0000"
+      end,
     }
   end,
 }
