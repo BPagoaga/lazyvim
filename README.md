@@ -1,4 +1,6 @@
 # 💤 LazyVim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+List of relevant plugins to remember:
+
+- [Leap](https://github.com/ggandor/leap.nvim)
+- [symbols outline](https://github.com/simrat39/symbols-outline.nvim)
