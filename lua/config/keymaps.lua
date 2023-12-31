@@ -11,6 +11,11 @@ keymap.set("n", "x", '"_x')
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
 
+-- surround with curly braces
+keymap.set("v", "<leader>{", "c{<Esc>po}<Esc>")
+-- surround with brackets
+keymap.set("v", "<leader>[", "c[<Esc>po]<Esc>")
+
 -- Disable continuations
 keymap.set("n", "<Leader>o", "o<Esc>^Da", opts)
 keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)

@@ -6,6 +6,6 @@ return {
 
     -- All the patterns used to detect root dir, when **"pattern"** is in
     -- detection_methods
-    patterns = { ".git", "package-lock.json", "yarn.lock" },
+    patterns = { ".git", "package-lock.json", "yarn.lock", "lazy-lock.json" },
   },
 }
