@@ -16,6 +16,30 @@ keymap.set("v", "<leader>{", "c{<Esc>po}<Esc>")
 -- surround with brackets
 keymap.set("v", "<leader>[", "c[<Esc>po]<Esc>")
 
+-- move lines up and down
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- rewatch the primeagen video on vim motions cuz that shit is useless
+vim.keymap.set("n", "J", "mzJ`z")
+
+-- center cursor on the screen when scrolling up and down
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- when searching, keep the highlight in the center of the screen
+vim.keymap.set("n", "n", "nzzzv")
+-- same but backward
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- go to next and previous error and center it
+vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+
+-- go to next and previous location and center it
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+
 -- Disable continuations
 keymap.set("n", "<Leader>o", "o<Esc>^Da", opts)
 keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)
