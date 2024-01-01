@@ -10,15 +10,25 @@ keymap.set("n", "x", '"_x')
 
 -- Select all
 keymap.set("n", "<C-a>", "gg<S-v>G")
+--
+-- Increment/decrement
+keymap.set("n", "+", "<C-a>")
+keymap.set("n", "-", "<C-x>")
 
 -- surround with curly braces
 keymap.set("v", "<leader>{", "c{<Esc>po}<Esc>")
 -- surround with brackets
 keymap.set("v", "<leader>[", "c[<Esc>po]<Esc>")
+-- surround with parentheses
+keymap.set("v", "<leader>(", "c(<Esc>po)<Esc>")
 
 -- move lines up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- keep whatever is in the register when pasting / deleting
+vim.keymap.set("x", "<leader>p", [["_dP]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- rewatch the primeagen video on vim motions cuz that shit is useless
 vim.keymap.set("n", "J", "mzJ`z")
