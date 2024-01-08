@@ -32,3 +32,7 @@ From ThePrimeagen Advanced Motions P2
 - use `g,` / `g;` to jump to newer/older position in change list
 
 ### Code/Diagnostics
+
+- code actions ?
+- run "eslint fix all prettier ?"
+- display floating diagnostics
