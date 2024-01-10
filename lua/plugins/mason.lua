@@ -8,7 +8,6 @@ return {
       "marksman",
       "emmet-language-server",
       "prettier",
-      "tailwindcss-language-server",
       "typescript-language-server",
       "yaml-language-server",
       "stylua",

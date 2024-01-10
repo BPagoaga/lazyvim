@@ -4,7 +4,7 @@ return {
   priority = 1000,
   opts = {
     lualine_bold = true,
-    transparent = false,
+    transparent = true,
     -- on_colors = function(colors)
     -- colors.bg = "#2a2a40"
     -- colors.fg = "#dfdfe2"
