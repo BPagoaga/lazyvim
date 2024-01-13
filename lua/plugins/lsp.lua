@@ -1,23 +1,34 @@
 return {
   "neovim/nvim-lspconfig",
-  config = function()
-    local lspconfig = require("lspconfig")
-    local util = require("lspconfig.util")
+  opts = {
+    setup = {
+      tsserver = function(_, opts)
+        local lspconfig = require("lspconfig")
+        local util = require("lspconfig.util")
 
-    lspconfig.tsserver.setup({
-      root_dir = util.root_pattern(".git", "package-lock.json", "yarn.lock"),
-    })
+        lspconfig.tsserver.setup({
+          root_dir = util.root_pattern(".git", "package-lock.json", "yarn.lock"),
+        })
+        return true
+      end,
+      eslint = function(_, opts)
+        local lspconfig = require("lspconfig")
+        local util = require("lspconfig.util")
 
-    lspconfig.eslint.setup({
-      root_dir = util.root_pattern(".eslintrc.js", ".eslintrc.json"),
-    })
+        lspconfig.eslint.setup({
+          root_dir = util.root_pattern(".eslintrc.js", ".eslintrc.json"),
+        })
+        return true
+      end,
+      emmet_language_server = function(_, opts)
+        local lspconfig = require("lspconfig")
+        local util = require("lspconfig.util")
 
-    lspconfig.tailwindcss.setup({
-      root_dir = util.root_pattern(".git", "package-lock.json", "yarn.lock"),
-    })
-
-    lspconfig.emmet_language_server.setup({
-      root_dir = util.root_pattern(".git", "package-lock.json", "yarn.lock"),
-    })
-  end,
+        lspconfig.emmet_language_server.setup({
+          root_dir = util.root_pattern(".git", "package-lock.json", "yarn.lock"),
+        })
+        return true
+      end,
+    },
+  },
 }
