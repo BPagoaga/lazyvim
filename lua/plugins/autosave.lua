@@ -10,6 +10,8 @@ return {
       cancel_defered_save = { "InsertEnter" }, -- vim events that cancel a pending deferred save
     },
     debounce_delay = 300,
-    execution_message = nil,
+    execution_message = {
+      enabled = false,
+    },
   },
 }

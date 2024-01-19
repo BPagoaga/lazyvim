@@ -16,11 +16,15 @@ keymap.set("n", "+", "<C-a>")
 keymap.set("n", "-", "<C-x>")
 
 -- surround with curly braces
-keymap.set("v", "<leader>{", "c{<Esc>po}<Esc>")
+keymap.set("v", "<leader>{", "c{<Esc>pa}<Esc>")
 -- surround with brackets
-keymap.set("v", "<leader>[", "c[<Esc>po]<Esc>")
+keymap.set("v", "<leader>[", "c[<Esc>pa]<Esc>")
 -- surround with parentheses
-keymap.set("v", "<leader>(", "c(<Esc>po)<Esc>")
+keymap.set("v", "<leader>(", "c(<Esc>pa)<Esc>")
+-- surround with double quotes
+keymap.set("v", '<leader>"', 'c"<Esc>pa"<Esc>')
+-- surround with simple quotes
+keymap.set("v", "<leader>'", "c'<Esc>pa'<Esc>")
 
 -- move lines up and down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -50,9 +54,10 @@ vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
--- Disable continuations
-keymap.set("n", "<Leader>o", "o<Esc>^Da", opts)
-keymap.set("n", "<Leader>O", "O<Esc>^Da", opts)
+-- Add line under the cursor and stay in normal mode
+keymap.set("n", "<leader>o", "o<Esc>", opts)
+-- Add line above the cursor and stay in normal mode
+keymap.set("n", "<leader>O", "O<Esc>", opts)
 
 -- Split window
 keymap.set("n", "ss", ":split<Return>", opts)

@@ -9,11 +9,11 @@ return {
       colors.bg = "#2a2a40"
       colors.fg = "#dfdfe2"
       colors.bg_popup = "#0a0a23"
-      colors.bg_sidebar = "#0a0a23"
+      colors.bg_sidebar = "#1b1b32"
       colors.bg_float = "#0a0a23"
-      colors.bg_statusline = "#0a0a23"
+      colors.bg_statusline = "#1b1b32"
 
-      vim.api.nvim_set_hl(0, "CursorLine", { bg = "#0a0a23" })
+      vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1b1b32" })
     end,
   },
 }
