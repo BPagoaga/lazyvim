@@ -2,7 +2,7 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     setup = {
-      tsserver = function(_, opts)
+      tsserver = function()
         local lspconfig = require("lspconfig")
         local util = require("lspconfig.util")
 
@@ -11,7 +11,7 @@ return {
         })
         return true
       end,
-      eslint = function(_, opts)
+      eslint = function()
         local lspconfig = require("lspconfig")
         local util = require("lspconfig.util")
 
@@ -20,7 +20,7 @@ return {
         })
         return true
       end,
-      emmet_language_server = function(_, opts)
+      emmet_language_server = function()
         local lspconfig = require("lspconfig")
         local util = require("lspconfig.util")
 
