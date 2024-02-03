@@ -14,6 +14,8 @@ return {
       colors.bg_statusline = "#1b1b32"
 
       vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1b1b32" })
+      vim.api.nvim_set_hl(0, "CursorColumn", { bg = "#1b1b32" })
+      vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#1b1b32" })
     end,
   },
 }

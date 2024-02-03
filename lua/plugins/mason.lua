@@ -12,6 +12,7 @@ return {
       "yaml-language-server",
       "css-lsp",
       "sonarlint-language-server",
+      "chrome-debug-adapter"
     },
   },
 }
