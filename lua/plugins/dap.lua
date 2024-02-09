@@ -3,7 +3,7 @@ local js_based_languages = {
   "javascript",
   "typescriptreact",
   "javascriptreact",
-  "vue",
+  "vue"
 }
 
 return {
@@ -73,7 +73,10 @@ return {
             request = "launch",
             type = "chrome",
             url = "http://localhost:5173",
-            webRoot = "${workspaceFolder}",
+            webRoot = "${workspaceFolder}/apps/web/src",
+            protocol = "inspector",
+            sourceMaps = true,
+            userDataDir = false,
           },
           -- Divider for the launch.json derived configs
           {
