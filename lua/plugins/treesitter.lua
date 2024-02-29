@@ -13,6 +13,7 @@ return {
         "luap",
         "markdown",
         "markdown_inline",
+        "norg",
         "tsx",
         "typescript",
         "yaml",
