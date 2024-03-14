@@ -6,6 +6,7 @@ return {
       "html-lsp",
       "json-lsp",
       "marksman",
+      "angular-language-server",
       "emmet-language-server",
       "prettier",
       "typescript-language-server",
