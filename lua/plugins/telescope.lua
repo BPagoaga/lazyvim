@@ -34,7 +34,8 @@ return {
         local builtin = require("telescope.builtin")
         builtin.live_grep()
       end,
-      desc = "Search for a string in your current working directory and get results live as you type, respects .gitignore",
+      desc =
+      "Search for a string in your current working directory and get results live as you type, respects .gitignore",
     },
     {
       "\\\\",
@@ -91,9 +92,10 @@ return {
           respect_gitignore = false,
           hidden = true,
           grouped = true,
-          previewer = false,
+          previewer = true,
           initial_mode = "normal",
-          layout_config = { height = 40 },
+          layout_strategy = "horizontal",
+          layout_config = { height = 40, width = 180 },
         })
       end,
       desc = "Open File Browser with the path of the current buffer",
@@ -145,6 +147,11 @@ return {
             ["<C-d>"] = function(prompt_bufnr)
               for i = 1, 10 do
                 actions.move_selection_next(prompt_bufnr)
+              end
+            end,
+            ["<C-x>"] = function(prompt_bufnr)
+              for i = 1, 10 do
+                actions.delete_buffer(prompt_bufnr)
               end
             end,
             ["<PageUp>"] = actions.preview_scrolling_up,

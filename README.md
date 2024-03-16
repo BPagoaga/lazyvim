@@ -9,6 +9,8 @@
 - [aerial](https://github.com/stevearc/aerial.nvim): open a tree of symbols `<leader>cs`
   - telescope integration : `<leader>ss`
 - [mini.surround](https://github.com/echasnovski/mini.surround?tab=readme-ov-file#features): surround with quotes, brackets, etc
+- [rest.nvim](https://github.com/rest-nvim/rest.nvim) (not installed): rest client
+- [neotest](https://github.com/nvim-neotest/neotest) (not installed): interact with tests
 
 ## Keymaps
 

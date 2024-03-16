@@ -3,6 +3,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
+        "angular",
         "html",
         "javascript",
         "jsdoc",
@@ -16,7 +17,11 @@ return {
         "norg",
         "tsx",
         "typescript",
+        "python",
         "yaml",
+        "scss",
+        "vim",
+        "vimdoc"
       },
     },
   },
