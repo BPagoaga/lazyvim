@@ -1,6 +1,6 @@
-return {
+return { {
   "craftzdog/solarized-osaka.nvim",
-  lazy = false,
+  lazy = true,
   priority = 1000,
   opts = {
     lualine_bold = true,
@@ -18,21 +18,26 @@ return {
       vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#1b1b32" })
     end,
   },
-}
+}, {
+  "LazyVim/LazyVim",
+  opts = {
+    colorscheme = "solarized-osaka",
+  },
+} }
 -- return {
 --   {
 --     "catppuccin/nvim",
 --     name = "catppuccin",
 --     lazy = true,
 --     priority = 1000,
---     -- opts = {
---     --   transparent_background = true,
---     -- },
+--     opts = {
+--       transparent_background = true,
+--     },
 --   },
 --   {
 --     "LazyVim/LazyVim",
 --     opts = {
---       colorscheme = "catppuccin",
+--       colorscheme = "catppuccin-macchiato",
 --     },
 --   },
 -- }
