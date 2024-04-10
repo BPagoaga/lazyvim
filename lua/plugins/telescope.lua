@@ -34,8 +34,7 @@ return {
         local builtin = require("telescope.builtin")
         builtin.live_grep()
       end,
-      desc =
-      "Search for a string in your current working directory and get results live as you type, respects .gitignore",
+      desc = "Search for a string in your current working directory and get results live as you type, respects .gitignore",
     },
     {
       "\\\\",
@@ -52,6 +51,14 @@ return {
         builtin.help_tags()
       end,
       desc = "Lists available help tags and opens a new window with the relevant help info on <cr>",
+    },
+    {
+      ";g",
+      function()
+        local builtin = require("telescope.builtin")
+        builtin.git_status()
+      end,
+      desc = "Lists modified files in git status, open files on <cr>",
     },
     {
       ";;",
