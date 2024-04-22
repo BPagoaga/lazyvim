@@ -16,6 +16,10 @@ return { {
       vim.api.nvim_set_hl(0, "CursorLine", { bg = "#1b1b32" })
       vim.api.nvim_set_hl(0, "CursorColumn", { bg = "#1b1b32" })
       vim.api.nvim_set_hl(0, "ColorColumn", { bg = "#1b1b32" })
+      vim.api.nvim_set_hl(0, "WinSeparator", { fg = "#1b1b32" })
+      vim.api.nvim_set_hl(0, "Folded", { fg = "#ffffff", bg = "#1b1b32" })
+      vim.api.nvim_set_hl(0, "IblIndent", { fg = "#1b1b32" })
+      vim.api.nvim_set_hl(0, "Visual", { bg = "#1b1b32", reverse = true })
     end,
   },
 }, {
