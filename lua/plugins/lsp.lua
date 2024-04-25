@@ -3,7 +3,7 @@ return {
   init = function()
     local keys = require("lazyvim.plugins.lsp.keymaps").get()
     -- change a keymap
-    keys[#keys + 1] = { "gd", ":vsplit | lua vim.lsp.buf.definition()<CR>" }
+    keys[#keys + 1] = { "gvd", ":vsplit | lua vim.lsp.buf.definition()<CR>" }
   end,
   opts = {
     setup = {
